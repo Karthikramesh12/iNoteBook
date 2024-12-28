@@ -6,7 +6,9 @@ connectToMongo();
 const app = express()
 const port = 5000 || process.env.PORT;
 
-app.use(cors())
+app.use(cors({
+    origin: "http://localhost:3000"
+}))
 app.use(express.json())
 app.use('/api/v1/auth', require('./routes/auth'));
 app.use('/api/v1/notes', require('./routes/notes'));
