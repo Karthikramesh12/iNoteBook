@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
-const host = "https://inotebook-backend-f89o.onrender.com"
+const host = "https://inotebook-backend-2-me1w.onrender.com"
 
 const SignUp = (props) => {
 
