@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
-const host = "https://inotebook-backend-4.onrender.com"
+const host = "http://localhost:5000"
 
 const Login = (props) => {
     const [creds, setCreds] = useState({ email: "", password: "" });

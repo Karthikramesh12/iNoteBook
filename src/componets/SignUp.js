@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
-const host = "https://inotebook-backend-4.onrender.com"
+const host = "http://localhost:3000"
 
 const SignUp = (props) => {
 
@@ -21,7 +21,6 @@ const SignUp = (props) => {
             body: JSON.stringify({ name, email, password })
         });
         const json = await response.json();
-        console.log(json);
         if (json.success){
             //save the auth token and rediect
             localStorage.setItem('token', json.authToken);
