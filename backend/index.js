@@ -12,5 +12,5 @@ app.use('/api/v1/auth', require('./routes/auth'));
 app.use('/api/v1/notes', require('./routes/notes'));
 
 app.listen(port, ()=>{
-    console.log(`app listing at https://inotebook-backend-1-yqqj.onrender.com}`)
+    console.log(`app listing at http://localhost:5000/}`)
 });
